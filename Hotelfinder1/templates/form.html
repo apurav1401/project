@@ -1,0 +1,60 @@
+<html>
+<body>
+<h1><font size = "7"> My Hotelfinder App</font> </h1>
+<br>
+
+
+<h1> <font size = "5"> welcome to the home page of our Hotel finder App </font> </h1>
+<h2> <font size = "5"> we find the best for you !!!</font></h2>
+<p> this App helps you to find the hotels near the desired Airports
+you just have to enter the airport code and the results would be there in no time </p>
+
+
+<form method="POST">
+    {%  csrf_token  %}
+    {{  form }}
+ <h1>
+<div class="wrap">
+   <div class="search">
+      <input type="text" class="searchTerm" placeholder="Enter Airport code">
+
+        <i class="fa fa-search"></i>
+     </button>
+   </div></h1>
+</div><h2><div class="search">
+      <input type="text" class="searchTerm" placeholder="Check IN Date">
+
+        <i class="fa fa-search"></i>
+     </button>
+   </div></h2>
+<h3></div>
+
+<div class="wrap">
+   <div class="search">
+      <input type="text" class="searchTerm" placeholder="Check out date">
+
+        <i class="fa fa-search"></i>
+     </button>
+   </div>
+</div></h3>
+
+    <h4><div class="wrap">
+   <div class="search">
+      <input type="text" class="searchTerm" placeholder="currency">
+
+        <i class="fa fa-search"></i>
+     </button>
+   </div></div><h4>
+
+<h5><button type="submit" class="searchButton"style="height: 15px; width: 50px"submit me</button>GO</h5>
+
+
+<h2>propertydata {{ data }}</h2>
+
+
+
+
+
+</form>
+</body>
+</html>
